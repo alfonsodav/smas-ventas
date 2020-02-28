@@ -1,13 +1,65 @@
-<mat-tab-group>
-       <mat-tab label="One">
-         <h1>Some tab content</h1>
-         <p>...</p>
-         <mat-card>Some tab content</mat-card>
-       </mat-tab>
-       <mat-tab label="Two">
-         <h1>Some more tab content</h1>
-         <p>...</p>
-        <mat-card>Some tab contents</mat-card>
-      </mat-tab>
-</mat-tab-group>
-
+<nav class="d-flex shadow nav-component">
+  <h3 class="pt-2">ADMINISTRACIÓN DE PUBLICACIONES</h3>
+  <div style="-webkit-box-flex: 1;flex-grow: 1;"></div>
+  
+  <div id="search-wrapper">
+    <input 
+           type="search" 
+           id="search" 
+           placeholder="Buscar Publicación"
+     />
+    <i class="fa fa-search" style="height: 44px;"></i>
+  </div>
+</nav>
+<div class="container mt-3">
+  <div class="d-flex">
+    <span>se muestran 2 de 4 </span>
+    <span style="-webkit-box-flex: 1;flex-grow: 1;"></span>
+    <span><i class="fas fa-filter"></i>ordenar</span>
+    <span><i class="fas fa-sort-amount-down-alt"></i> filtrar</span>
+  </div>
+  <div class="table-scroll-vertical publicaciones">
+    <table>
+      <thead>
+        <th>menu</th>
+        <th><span matBadge="4" matBadgeOverlap="false">publicación</span></th>
+        <th>publicidad destacada</th>
+        <th>publicidad en pagina central</th>
+        <th>publicidad en pie de pagina</th>
+        <th>publicidad en encabezado</th>
+        <th>publicidad lateral izquierda</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="action-table"><i class="far fa-pause-circle"></i> <i class="far fa-edit"></i> <i class="fa fa-power-off"></i></td>
+          <td>
+            <div class="p-3 mt-1 d-flex ">
+             <img class="rounded-circle ml-2 mt-n2" src="assets/images/sunsol-piscina-sm.jpg" alt="" width="50px" height="50px">
+             <span class="p-2">hotel Euro Building</span>
+            </div>
+          </td>
+          <td>
+            <span class="contador">"contador"   </span>
+            <span class="fa fa-plus-circle  plus"></span>
+          </td>
+          <td>
+            <span class="contador">"contador"   </span>
+            <span class="fa fa-plus-circle  plus"></span>
+          </td>
+          <td>
+            <span class="contador">"contador"   </span>
+            <span class="fa fa-plus-circle  plus"></span>
+          </td>
+          <td>
+            <span class="contador">"contador"   </span>
+            <span class="fa fa-minus-circle  menos"></span>
+          </td>
+          <td>
+            <span class="contador">"contador"   </span>
+            <span class="fa fa-minus-circle  menos"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

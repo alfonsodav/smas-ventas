@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,7 +30,9 @@ import { PublicacionComponent } from './view/publicacion/publicacion.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

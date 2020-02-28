@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   menu: any[] = [
     {
-      icon: 'fa-american-football',
+      icon: 'fa-newspaper',
       name: 'Publicaciones',
       redirecTo: '/publicaciones'
     },
     {
-      icon: 'fa-calendar',
+      icon: 'fa-calendar-alt',
       name: 'Calendario de Citas',
       redirecTo: '/alert'
     },
@@ -33,7 +33,7 @@ export class AppComponent {
       redirecTo: '/card'
     },
     {
-      icon: 'fa-card',
+      icon: 'fa-tachometer-alt',
       name: 'Escritorio',
       redirecTo: '/card'
     },
