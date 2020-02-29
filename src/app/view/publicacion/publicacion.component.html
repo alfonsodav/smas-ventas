@@ -1,15 +1,12 @@
 
-<h3 class="titulo">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
-<nav mat-tab-nav-bar [backgroundColor]="background">
-  <a mat-tab-link 
-  (click)="activeLink = link"
-  [active]="activeLink == link"> uno </a>
-  <a mat-tab-link 
-  (click)="activeLink = dos"
-  [active]="activeLink == dos"> dos </a>
-</nav>
+<p class="titulo">edita tu publicacion <b class="font-italic">"nombre"</b></p>
+
 <mat-tab-group mat-align-tabs="end">
-  <mat-tab  label="One">
+  <mat-tab >
+    <ng-template mat-tab-label>
+      <mat-icon class="fa fa-home"></mat-icon>
+      Imagen principal
+    </ng-template>
       
       <mat-card class="container">
         <mat-card-title class="text-smas">Seleciona tu imagen principal</mat-card-title>
@@ -17,12 +14,45 @@
           <figure> 
             <img *ngFor="let imagen of imagenes" class="miniatura shadow" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
           </figure>
-          <mat-card-actions></mat-card-actions>
+          <mat-card-actions class="">Guardar</mat-card-actions>
         </div>
       </mat-card>
     </mat-tab>
-    <mat-tab label="Two">
-      <h1>Some more tab content</h1>
-     <mat-card class="container">Some tab contents</mat-card>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="fa fa-home"></mat-icon>
+        Cambiar Atributos
+      </ng-template>
+     <mat-card class="container"></mat-card>
    </mat-tab>
+   <mat-tab >
+    <ng-template mat-tab-label>
+      <mat-icon class="fa fa-home"></mat-icon>
+      Gestionar Multimedia
+    </ng-template>
+
+   <mat-card class="container">
+    <mat-card-title class="text-smas">Selecione los archivos que desea eliminar</mat-card-title>
+    <div class="miniaturas d-flex">
+      <figure *ngFor="let imagen of imagenes">
+        <img  class="miniatura shadow" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
+        <span class="far fa-trash-alt d-block text-center"></span>
+      </figure>
+      
+    </div>
+   </mat-card>
+  </mat-tab>
+  <mat-tab >
+    <ng-template mat-tab-label>
+      <mat-icon class="fa fa-home"></mat-icon>
+      Imagenes Publicitarias
+    </ng-template>
+    
+    <mat-card class="container">Some tab contents</mat-card>
+    </mat-tab>
+    <mat-tab disabled class="regresar">
+    <ng-template mat-tab-label class="d-block">
+      <a href="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>
+    </ng-template>
+  </mat-tab>
 </mat-tab-group>

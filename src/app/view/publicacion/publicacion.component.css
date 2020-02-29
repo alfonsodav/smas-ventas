@@ -12,6 +12,7 @@
 }
 .container{
     border: 1px solid #ccc;
+    margin-top: 5%;
 }
 .mat-card {
     border-radius: 2px !important;
@@ -20,4 +21,9 @@
     position: absolute;
     padding: 10px;
     color: #00b0bc;
+}
+@media(max-width:1024px){
+    .titulo{
+        display: none;
+    }
 }

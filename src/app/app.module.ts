@@ -7,6 +7,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MDBModalRef } from 'angular-bootstrap-md';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -38,6 +39,7 @@ import { PublicacionComponent } from './view/publicacion/publicacion.component';
     MatTabsModule,
     MatDialogModule,
     MatDividerModule,
+    MatIconModule,
     MDBBootstrapModule.forRoot()
   ],
   entryComponents: [],
