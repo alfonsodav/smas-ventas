@@ -4,6 +4,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBModalRef } from 'angular-bootstrap-md';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +17,7 @@ import { SidebarComponent } from './view/sidebar/sidebar.component';
 import { PublicacionesComponent } from './view/publicaciones/publicaciones.component';
 import { HomeComponent } from './view/home/home.component';
 import { PublicacionComponent } from './view/publicacion/publicacion.component';
+
 
 
 @NgModule({
@@ -31,10 +36,12 @@ import { PublicacionComponent } from './view/publicacion/publicacion.component';
     MatSidenavModule,
     MatCardModule,
     MatTabsModule,
-    MatDialogModule
-
+    MatDialogModule,
+    MatDividerModule,
+    MDBBootstrapModule.forRoot()
   ],
-  providers: [],
+  entryComponents: [],
+  providers: [MDBModalRef],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

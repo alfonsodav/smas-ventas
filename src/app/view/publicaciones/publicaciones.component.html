@@ -36,30 +36,61 @@
             <div class="p-3 mt-1 d-flex ">
              <img class="rounded-circle ml-2 mt-n2" src="assets/images/sunsol-piscina-sm.jpg" alt="" width="50px" height="50px">
              <span class="p-2">hotel Euro Building</span>
+             
             </div>
           </td>
           <td>
             <span class="contador">"contador"   </span>
-            <span class="fa fa-plus-circle  plus"></span>
+            <span class="fa fa-plus-circle plus" (click)="basicModal.show()"></span>
           </td>
           <td>
             <span class="contador">"contador"   </span>
-            <span class="fa fa-plus-circle  plus"></span>
+            <span class="fa fa-plus-circle  plus" (click)="basicModal.show()"></span>
           </td>
           <td>
             <span class="contador">"contador"   </span>
-            <span class="fa fa-plus-circle  plus"></span>
+            <span class="fa fa-plus-circle plus" (click)="basicModal.show()"></span>
           </td>
           <td>
             <span class="contador">"contador"   </span>
-            <span class="fa fa-minus-circle  menos"></span>
+            <span class="fa fa-minus-circle menos" (click)="basicModal.show()"></span>
           </td>
           <td>
             <span class="contador">"contador"   </span>
-            <span class="fa fa-minus-circle  menos"></span>
+            <span class="fa fa-minus-circle menos" (click)="basicModal.show()"></span>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
+      
+<div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+  aria-hidden="true" [config]="{backdrop: false}">
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Añadir Publicidad</h4>
+      </div>
+      <div class="modal-body text-center">
+        <figure >
+          <img src="assets/images/sunsol-piscina-sm.jpg" class="rounded-circle d-block mx-auto" width="150" height="150">
+        </figure>
+      <h3>Publicidad Destacada</h3>
+      <h4>A continuiacion se presenta la publicidad de Destacada diponible para añadir. 
+        selecciona la que deseas añadir a tu publicación</h4>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="modal-body">
+        <div class="font-weight-bold">
+          <p>VENCIMIENTO: <span class="text-danger">21/04/2020  12:00</span> </p>
+          <p>DIAS DISPONIBLES: <span class="text-primary">25</span></p>
+          <p>PUBLICIDAD DISPONIBLE: <span class="text-primary">2</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+    

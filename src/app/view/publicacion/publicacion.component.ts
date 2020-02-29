@@ -7,6 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicacionComponent implements OnInit {
 
+  imagenes: any[] = [
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {

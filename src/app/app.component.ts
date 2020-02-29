@@ -15,32 +15,32 @@ export class AppComponent {
     {
       icon: 'fa-calendar-alt',
       name: 'Calendario de Citas',
-      redirecTo: '/alert'
+      redirecTo: '/'
     },
     {
       icon: 'fa-file-invoice-dollar',
       name: 'Facturación',
-      redirecTo: '/card'
+      redirecTo: '/'
     },
     {
       icon: 'fa-headset',
       name: 'Soporte Técnico',
-      redirecTo: '/avatar'
+      redirecTo: '/'
     },
     {
       icon: 'fa-chart-line',
       name: 'Mis Estadísticas',
-      redirecTo: '/card'
+      redirecTo: '/'
     },
     {
       icon: 'fa-tachometer-alt',
       name: 'Escritorio',
-      redirecTo: '/card'
+      redirecTo: '/'
     },
     {
       icon: 'fa-comments',
       name: 'Chat de Usuarios',
-      redirecTo: '/card'
+      redirecTo: '/'
     }
   ];
   title = 'smas';

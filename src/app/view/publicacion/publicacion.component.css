@@ -1,0 +1,23 @@
+.miniatura{
+    width: 150px;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30) !important
+}
+.miniatura:active{
+    border: 1px solid #084c55;
+}
+.container{
+    border: 1px solid #ccc;
+}
+.mat-card {
+    border-radius: 2px !important;
+}
+.titulo{
+    position: absolute;
+    padding: 10px;
+    color: #00b0bc;
+}

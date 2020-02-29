@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { MDBModalRef, MDBModalService } from 'angular-bootstrap-md';
+
+
+
 
 @Component({
   selector: 'app-publicaciones',
   templateUrl: './publicaciones.component.html',
   styleUrls: ['./publicaciones.component.css']
 })
-export class PublicacionesComponent implements OnInit {
+export class PublicacionesComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

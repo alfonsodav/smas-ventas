@@ -1,12 +1,28 @@
-<mat-tab-group>
-    <mat-tab label="One">
-      <h1>Some tab content</h1>
-      <p>...</p>
-      <mat-card>Some tab content</mat-card>
+
+<h3 class="titulo">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
+<nav mat-tab-nav-bar [backgroundColor]="background">
+  <a mat-tab-link 
+  (click)="activeLink = link"
+  [active]="activeLink == link"> uno </a>
+  <a mat-tab-link 
+  (click)="activeLink = dos"
+  [active]="activeLink == dos"> dos </a>
+</nav>
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab  label="One">
+      
+      <mat-card class="container">
+        <mat-card-title class="text-smas">Seleciona tu imagen principal</mat-card-title>
+        <div class="miniaturas">
+          <figure> 
+            <img *ngFor="let imagen of imagenes" class="miniatura shadow" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
+          </figure>
+          <mat-card-actions></mat-card-actions>
+        </div>
+      </mat-card>
     </mat-tab>
     <mat-tab label="Two">
       <h1>Some more tab content</h1>
-      <p>...</p>
-     <mat-card>Some tab contents</mat-card>
+     <mat-card class="container">Some tab contents</mat-card>
    </mat-tab>
 </mat-tab-group>
