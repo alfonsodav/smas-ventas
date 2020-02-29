@@ -8,6 +8,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MDBModalRef } from 'angular-bootstrap-md';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,6 +42,8 @@ import { PublicacionComponent } from './view/publicacion/publicacion.component';
     MatDialogModule,
     MatDividerModule,
     MatIconModule,
+    MatExpansionModule,
+    MatFormFieldModule,
     MDBBootstrapModule.forRoot()
   ],
   entryComponents: [],

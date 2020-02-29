@@ -18,13 +18,84 @@
         </div>
       </mat-card>
     </mat-tab>
+
+    <!--////////////////////////////////////////////////////////////////////-->
+
     <mat-tab>
       <ng-template mat-tab-label>
         <mat-icon class="fa fa-home"></mat-icon>
         Cambiar Atributos
       </ng-template>
-     <mat-card class="container"></mat-card>
+     <mat-card class="container">
+      <mat-panel-title class="text-smas">
+        PRECIO
+      </mat-panel-title>
+      <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+      <mat-icon class="far fa-edit text-primary" (click)="precio.toggle()"></mat-icon>
+        
+      <div class="" mdbCollapse #precio="bs-collapse">
+        <form class="example-form">
+        
+            <input type="" class="atributos">
+       
+      </form>
+      </div> 
+      <mat-panel-title class="text-smas">
+        DESCRIPCIÓN
+      </mat-panel-title>
+      <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+      <mat-icon class="far fa-edit text-primary" (click)="descripcion.toggle()"></mat-icon>
+        
+      <div class="" mdbCollapse #descripcion="bs-collapse">
+        <form class="example-form">
+        
+            <input type="" class="atributos">
+       
+      </form>
+      </div> 
+      <mat-panel-title class="text-smas">
+        ESTRELLAS
+      </mat-panel-title>
+      <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+      <mat-icon class="far fa-edit text-primary" (click)="estrellas.toggle()"></mat-icon>
+        
+      <div class="" mdbCollapse #estrellas="bs-collapse">
+        <form class="example-form">
+        
+            <input type="" class="atributos">
+       
+      </form>
+      </div> 
+      <mat-panel-title class="text-smas">
+        PISCINA
+      </mat-panel-title>
+      <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+      <mat-icon class="far fa-edit text-primary" (click)="piscina.toggle()"></mat-icon>
+        
+      <div class="" mdbCollapse #piscina="bs-collapse">
+        <form class="example-form">
+        
+            <input type="" class="atributos">
+       
+      </form>
+      </div> 
+      <mat-panel-title class="text-smas">
+        SEVICIO AL CUARTO
+      </mat-panel-title>
+      <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+      <mat-icon class="far fa-edit text-primary" (click)="servicio.toggle()"></mat-icon>
+        
+      <div class="" mdbCollapse #servicio="bs-collapse">
+        <form class="example-form">
+        
+            <input type="" class="atributos">
+       
+      </form>
+      </div> 
+    
+     </mat-card>
    </mat-tab>
+   <!--////////////////////////////////////////////////////////////////////-->
    <mat-tab >
     <ng-template mat-tab-label>
       <mat-icon class="fa fa-home"></mat-icon>
@@ -42,6 +113,8 @@
     </div>
    </mat-card>
   </mat-tab>
+  <!--////////////////////////////////////////////////////////////////////-->
+
   <mat-tab >
     <ng-template mat-tab-label>
       <mat-icon class="fa fa-home"></mat-icon>
@@ -50,6 +123,7 @@
     
     <mat-card class="container">Some tab contents</mat-card>
     </mat-tab>
+    <!--////////////////////////////////////////////////////////////////////-->
     <mat-tab disabled class="regresar">
     <ng-template mat-tab-label class="d-block">
       <a href="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>

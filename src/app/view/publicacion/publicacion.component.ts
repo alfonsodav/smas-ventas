@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicacionComponent implements OnInit {
 
+
   imagenes: any[] = [
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
@@ -34,6 +35,7 @@ export class PublicacionComponent implements OnInit {
     },
   ];
 
+  panelOpenState = false;
   constructor() { }
 
   ngOnInit() {

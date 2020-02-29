@@ -13,6 +13,7 @@
 .container{
     border: 1px solid #ccc;
     margin-top: 5%;
+    color: #51818b;
 }
 .mat-card {
     border-radius: 2px !important;
@@ -26,4 +27,8 @@
     .titulo{
         display: none;
     }
+}
+.atributos{
+    border: none;
+    border-bottom: 1px solid #ccc !important;
 }
