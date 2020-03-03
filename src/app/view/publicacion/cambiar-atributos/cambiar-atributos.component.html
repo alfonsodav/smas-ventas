@@ -1,0 +1,88 @@
+<nav class="nav navbar shadow">
+  <h3 class="pl-3">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
+  <div style="-webkit-box-flex: 1;flex-grow: 1;border:none"></div>
+  <div>
+    <a class="nav-link" routerLink="/publicacion"><i class="fa fa-camera-retro"></i>Imagen principal</a>
+  </div>
+  <div>
+    <a class="nav-link"  routerLink="/publicacion/atributos"><i class="fa fa-info-circle"></i>atributos</a>
+  </div>
+  <div> 
+    <a class="nav-link" routerLink="/publicacion/gestionar"><i class="fa fa-folder-open"></i>Gestionar Multimedia</a>
+  </div>
+  <div style="border-right: 1px solid #ccc;">
+    <a class="nav-link" routerLink="/publicacion/publicitaria"><i class="fa fa-photo-video"></i>Imagenes Publicitarias</a>
+  </div>
+  <div id="regresar"> 
+    <a class="nav-link"  routerLink="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>
+  </div>  
+</nav>
+
+<mat-card class="container">
+    <mat-panel-title class="text-smas">
+      PRECIO
+    </mat-panel-title>
+    <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+    <mat-icon class="far fa-edit text-primary" (click)="precio.toggle()"></mat-icon>
+      
+    <div class="" mdbCollapse #precio="bs-collapse">
+      <form class="example-form">
+      
+          <input type="" class="atributos">
+     
+    </form>
+    </div> 
+    <mat-panel-title class="text-smas">
+      DESCRIPCIÓN
+    </mat-panel-title>
+    <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+    <mat-icon class="far fa-edit text-primary" (click)="descripcion.toggle()"></mat-icon>
+      
+    <div class="" mdbCollapse #descripcion="bs-collapse">
+      <form class="example-form">
+      
+          <input type="" class="atributos">
+     
+    </form>
+    </div> 
+    <mat-panel-title class="text-smas">
+      ESTRELLAS
+    </mat-panel-title>
+    <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+    <mat-icon class="far fa-edit text-primary" (click)="estrellas.toggle()"></mat-icon>
+      
+    <div class="" mdbCollapse #estrellas="bs-collapse">
+      <form class="example-form">
+      
+          <input type="" class="atributos">
+     
+    </form>
+    </div> 
+    <mat-panel-title class="text-smas">
+      PISCINA
+    </mat-panel-title>
+    <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+    <mat-icon class="far fa-edit text-primary" (click)="piscina.toggle()"></mat-icon>
+      
+    <div class="" mdbCollapse #piscina="bs-collapse">
+      <form class="example-form">
+      
+          <input type="" class="atributos">
+     
+    </form>
+    </div> 
+    <mat-panel-title class="text-smas">
+      SEVICIO AL CUARTO
+    </mat-panel-title>
+    <mat-icon class="far fa-trash-alt text-danger"></mat-icon>
+    <mat-icon class="far fa-edit text-primary" (click)="servicio.toggle()"></mat-icon>
+      
+    <div class="" mdbCollapse #servicio="bs-collapse">
+      <form class="example-form">
+      
+          <input type="" class="atributos">
+     
+    </form>
+    </div> 
+  
+   </mat-card>

@@ -20,6 +20,9 @@ import { SidebarComponent } from './view/sidebar/sidebar.component';
 import { PublicacionesComponent } from './view/publicaciones/publicaciones.component';
 import { HomeComponent } from './view/home/home.component';
 import { PublicacionComponent } from './view/publicacion/publicacion.component';
+import { CambiarAtributosComponent } from './view/publicacion/cambiar-atributos/cambiar-atributos.component';
+import { GestionarComponent } from './view/publicacion/gestionar/gestionar.component';
+import { PublicitariaComponent } from './view/publicacion/publicitaria/publicitaria.component';
 
 
 
@@ -31,6 +34,9 @@ import { PublicacionComponent } from './view/publicacion/publicacion.component';
     PublicacionesComponent,
     HomeComponent,
     PublicacionComponent,
+    CambiarAtributosComponent,
+    GestionarComponent,
+    PublicitariaComponent,
   ],
   imports: [
     BrowserModule,

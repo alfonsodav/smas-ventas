@@ -23,7 +23,7 @@
     padding: 10px;
     color: #00b0bc;
 }
-@media(max-width:1024px){
+@media(max-width:1200px){
     .titulo{
         display: none;
     }
@@ -31,4 +31,37 @@
 .atributos{
     border: none;
     border-bottom: 1px solid #ccc !important;
+}
+.nav div i{
+    padding-left: 37%;
+    font-size: 1.5em;
+} 
+.nav div{
+    border-left: 1px solid #ccc;
+    padding-top: 0.5rem;
+    
+}
+.nav{
+    color: #00b0bc;
+    padding: 0 !important;
+}
+.nav a{
+    display: grid;
+    color: #084c55;
+}
+a:hover{
+    color: #00b0bc;
+}
+#regresar{
+    border:none;
+}
+.publicidad{
+    background-color: #f0f0f0;
+    margin: 1rem !important;
+    padding: 1rem;
+    
+}
+.publicidad p{
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }

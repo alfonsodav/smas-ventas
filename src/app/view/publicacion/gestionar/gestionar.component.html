@@ -1,0 +1,63 @@
+<nav class="nav navbar shadow">
+    <h3 class="pl-3">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
+    <div style="-webkit-box-flex: 1;flex-grow: 1;border:none"></div>
+    <div>
+      <a class="nav-link" routerLink="/publicacion"><i class="fa fa-camera-retro"></i>Imagen principal</a>
+    </div>
+    <div>
+      <a class="nav-link"  routerLink="/publicacion/atributos"><i class="fa fa-info-circle"></i>atributos</a>
+    </div>
+    <div> 
+      <a class="nav-link" routerLink="/publicacion/gestionar"><i class="fa fa-folder-open"></i>Gestionar Multimedia</a>
+    </div>
+    <div style="border-right: 1px solid #ccc;">
+      <a class="nav-link" routerLink="/publicacion/publicitaria"><i class="fa fa-photo-video"></i>Imagenes Publicitarias</a>
+    </div>
+    <div id="regresar"> 
+      <a class="nav-link"  routerLink="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>
+    </div>  
+</nav>
+
+<mat-card class="container">
+    <mat-card-title class="text-smas">Selecione los archivos que desea eliminar</mat-card-title>
+    
+        <button class="btn" (click)="mostrar('imagen')">imagenes</button>
+        <button class="btn" (click)="mostrar('video')">videos</button>
+        <button class="btn" (click)="mostrar('archivo')">documentos</button>
+
+
+    <div class="miniaturas row" *ngIf="multimedia == 'imagen'" >
+      <figure class="col-2" *ngFor="let imagen of imagenes">
+        <img  class="miniatura shadow" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
+        <span class="far fa-trash-alt d-block text-center"></span>
+      </figure> 
+    </div>
+
+    <div class="miniaturas row" *ngIf="multimedia == 'video'">
+        <div *ngFor="let video of videos">
+          <video  class="miniatura shadow" controls preload="metadata" >
+            <source src="{{video.ruta}}">  
+            {{video.altFile}}</video>
+          <span class="far fa-trash-alt d-block text-center"></span>
+        </div> 
+    </div>
+
+    <div class="miniaturas row" *ngIf="multimedia == 'archivo'">
+        <figure *ngFor="let documento of documentos">
+        <a href="{{documento.ruta}}">
+          <img  class="miniatura shadow" src="{{documento.portada}}" alt="{{documento.altFile}}">
+        </a>
+        <span class="far fa-trash-alt d-block text-center"></span>
+        </figure> 
+    </div>
+
+    <div class="d-flex"> 
+        <div style="-webkit-box-flex: 1;flex-grow: 1;"></div>
+        <button class="btn bg-primary rounded text-white" (click)="imagen.toggle()">Subir</button>
+    </div>
+        <div class="mx-auto" mdbCollapse #imagen="bs-collapse">
+            <form class="">
+                <input type="file" class="">
+          </form>
+        </div>
+   </mat-card>
