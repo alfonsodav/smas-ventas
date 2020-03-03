@@ -35,15 +35,15 @@ export class GestionarComponent implements OnInit {
   ];
   videos: any[] = [
     {
-      ruta: 'assets/videos/Gorillaz-OnMelancholyHill.mp4',
+      ruta: 'assets/videos/1.Introducción.mp4',
       altFile: 'Gorillaz On Melancholy hill video oficial'
     },
     {
-      ruta: 'assets/videos/Gorillaz-OnMelancholyHill.mp4',
+      ruta: 'assets/videos/1.Introducción.mp4',
       altFile: 'Gorillaz On Melancholy hill video oficial'
     },
     {
-      ruta: 'assets/videos/Gorillaz-OnMelancholyHill.mp4',
+      ruta: 'assets/videos/1.Introducción.mp4',
       altFile: 'Gorillaz On Melancholy hill video oficial'
     }
   ];
