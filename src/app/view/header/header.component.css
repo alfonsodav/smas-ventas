@@ -13,9 +13,9 @@
     display: flex;
     color:#3bb2aa;
     margin: 0px;
+    font-size: 1.3rem !important;
 }
 .nav-user a{
-    
     color:#3bb2aa;
 }
 @media (max-width:700px){

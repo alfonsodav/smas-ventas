@@ -2,14 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs'; // eliminar
 import { MatDialogModule } from '@angular/material/dialog';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MDBModalRef } from 'angular-bootstrap-md';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatBadgeModule } from '@angular/material/badge';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -49,7 +50,7 @@ import { PublicitariaComponent } from './view/publicacion/publicitaria/publicita
     MatDividerModule,
     MatIconModule,
     MatExpansionModule,
-    MatFormFieldModule,
+    MatBadgeModule,
     MDBBootstrapModule.forRoot()
   ],
   entryComponents: [],

@@ -4,59 +4,34 @@ padding: 25px;
 .nav-component h3{
     color: #3bb2aa;
     }
-
-#search-wrapper {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-flex-flow: row-reverse nowrap;
-        -ms-flex-flow: row-reverse nowrap;
-            flex-flow: row-reverse nowrap;
-    width: 350px;
-  }
-  #search-wrapper #search {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-left: 0;
-    border-radius: 0 25px 25px 0;
-    color: #444;
-    padding: .6rem .5rem;
-    font-family: 'Lato';
-    font-size: 15px;
-    font-weight: lighter;
-    -webkit-transition: border-color .2s ease;
-    transition: border-color .2s ease;
-    width: 100%;
-  }
-  #search-wrapper #search + i {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 25px 0 0 25px;
-    border-right: 0;
-    color: #777;
-    padding: .67rem .65rem;
-    -webkit-transition: border-color .2s ease;
-    transition: border-color .2s ease;
-  }
-  #search-wrapper #search:focus {
-    border-color: rgb(66, 66, 66);
-    outline: none;
-  }
-  #search-wrapper #search:focus + i {
-    border-color: #999;
-  }
+    .search {
+        position: relative;
+        color: #aaa;
+        font-size: 18px;
+      }
+      
+      .search input {
+        width: 250px;
+        height: 32px;
+      
+        background: #dfdfdf;
+        border: 1px solid #aaa;
+        border-radius: 20px;
+        box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+      }
+      
+      .search input { text-indent: 32px;}
+      .search .fa-search { 
+        position: absolute;
+        top: 8px;
+        left: 10px;
+      }
 .publicaciones{
-    margin-top: 5%;
-    border: 1px solid #ccc; 
+    margin-top: 3%;
+    
 }
 .publicaciones tbody, td{
-
-    border: 1px solid #ccc; 
+    border: 1px solid #dfdfdf; 
 }
 #action-table{
     display: grid;
@@ -64,15 +39,32 @@ padding: 25px;
 }
 #action-table i{
     padding: 5px;
+    color: #cfcfcf;
+    font-weight: bold;
+}
+#action-table i:hover{ 
+    color: #3bb2aa;
 }
 .contador{
-    text-decoration: underline;
+    text-decoration: underline #dfdfdf;
+
 }
 .plus {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #0ec2fb;
 }
 .menos{
-    font-size: 1.3em;
+    font-size: 1.5em;
     color:#ef2c2c
+}
+th{
+    padding: 5px;
+    font-weight: bolder;
+    
+}
+.tabla{
+    border: 2px solid #dfdfdf; 
+    -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
+box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
 }
