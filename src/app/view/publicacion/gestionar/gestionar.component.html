@@ -18,13 +18,13 @@
     </div>  
 </nav>
 
-<mat-card class="container">
+<mat-card class="container gestiones">
     <mat-card-title class="text-smas">Selecione los archivos que desea eliminar</mat-card-title>
-    
-        <button class="btn" (click)="mostrar('imagen')">imagenes</button>
-        <button class="btn" (click)="mostrar('video')">videos</button>
-        <button class="btn" (click)="mostrar('archivo')">documentos</button>
-
+    <div>
+        <button class="btn gestionado" (click)="mostrar('archivo')"><i class="far fa-file-pdf"></i></button>
+        <button class="btn gestionado" (click)="mostrar('video')"><i class="fa fa-film"></i></button>
+        <button class="btn gestionado" (click)="mostrar('imagen')"><i class="far fa-image"></i></button>
+      </div>
 
     <div class="miniaturas row" *ngIf="multimedia == 'imagen'" >
       <figure class="col-2" *ngFor="let imagen of imagenes">

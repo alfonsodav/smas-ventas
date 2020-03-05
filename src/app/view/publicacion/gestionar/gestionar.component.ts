@@ -55,7 +55,7 @@ export class GestionarComponent implements OnInit {
     },
     {
       portada: 'assets/docs/docs-portada.png',
-      ruta: 'assets/docs/Modulo6-Sprint1PerfildeUsuario.pdf',
+      ruta: 'assets/docs/Modulo_5_Sprint_2.pdf',
       altFile: 'modulo 6'
     },
     {
@@ -65,7 +65,7 @@ export class GestionarComponent implements OnInit {
     },
     {
       portada: 'assets/docs/docs-portada.png',
-      ruta: 'assets/docs/Modulo6-Sprint1PerfildeUsuario.pdf',
+      ruta: 'assets/docs/Modulo_5_Sprint_2.pdf',
       altFile: 'modulo 6 usuarios'
     }
   ];

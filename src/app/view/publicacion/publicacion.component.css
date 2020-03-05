@@ -65,3 +65,13 @@ a:hover{
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
 }
+.gestiones{
+    display: grid;
+}
+.gestionado{
+    float: right;
+}
+.gestionado i {
+    color: #00b0bc;
+    font-size: 2rem;
+}
