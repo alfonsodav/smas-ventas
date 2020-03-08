@@ -1,0 +1,81 @@
+<div class="p-2" >
+    <h5 class="text-center">Perfil de Usuario</h5>
+    
+        <img class="avatar mx-auto d-block" src="assets/images/avatar.jpg" width="150px" height="150px">
+    
+<div class="border container shadow bg-white p-4">
+    <div>
+        <h3 class="text-center d-block nombre">ALFONSO DAVILA</h3>
+    <div class="text-center">
+        <button class="btn opciones" (click)="mostrar('editar')"><i class="far fa-edit"></i></button>
+        <button class="btn opciones" (click)="mostrar('configurar')"><i class="fas fa-industry"></i></button>
+        <button class="btn opciones" (click)="mostrar('imagen')"><i class="fas fa-camera"></i></button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div *ngIf="opciones =='editar'" class="scrollable">
+        <p> <b>Datos Personales</b></p>
+        <form action="" name="user-data" class="form-group row">
+    <div class="col-6">
+        <label class="col-form-label" for="nombre">Nombre/Razón Social</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" required>
+    </div>
+    <div class="col-6">
+        <label class="col-form-label" for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" class="form-control">
+    </div>
+    <div class="col-6">
+        <label class="col-form-label" for="pais">País</label>
+        <input type="text" name="pais" id="pais" class="form-control">
+    </div>
+    <div class="col-6">
+        <label class="col-form-label" for="local">Localidad</label>
+        <input type="text" name="local" id="local" class="form-control">
+    </div>
+    <div class="col-6">
+        <label class="col-form-label" for="telefono">Telefono</label>
+        <input type="tel" class="form-control" name="telefono" id="telefono" required>
+    </div>
+    <div class="col-6">
+        <label class="col-form-label" for="direcion">Domicílio</label>
+        <input type="text" name="direcion" id="direcion" class="form-control">
+    </div>
+    <button type="submit" class="btn d-block mx-auto mt-3 text-white" style="background-color:#13646c;">Actualizar Perfil</button>
+        </form>  
+</div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div *ngIf="opciones == 'configurar'">
+    <p><b>Configuracion de cuenta</b></p>
+<form class="form-groud col-6">
+    <div>
+    <span class="mr-3">¿Recibir notificaciones por correo?</span>
+    <label class="switch">
+        <input type="checkbox">on
+        <span class="slider"></span>
+    </label>
+</div>
+    <div>
+    <span class="mr-3">¿Desea compartir su ubicación?</span>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+</div>
+    <label for="idioma" class=" d-flex">Idioma por defecto
+    <select required class="custom-select browser-default" id="idioma">
+        <option value="Español">Español</option>
+        <option value="English">English</option>
+    </select>
+    </label>
+</form>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div *ngIf="opciones == 'imagen'" class="d-block p-2">
+    <p class="text-center"><b>actualizar foto de Perfil</b></p>
+    <img class="rounded mx-auto d-block" src="assets/images/avatar.jpg" width="150px" height="150px">
+    <button type="submit" class="btn mx-auto d-block" id="subir-imagen">Subir nueva imagen</button>
+    
+</div>
+
+</div>
+</div>

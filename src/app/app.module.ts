@@ -24,6 +24,7 @@ import { PublicacionComponent } from './view/publicacion/publicacion.component';
 import { CambiarAtributosComponent } from './view/publicacion/cambiar-atributos/cambiar-atributos.component';
 import { GestionarComponent } from './view/publicacion/gestionar/gestionar.component';
 import { PublicitariaComponent } from './view/publicacion/publicitaria/publicitaria.component';
+import { PerfilComponent } from './view/perfil/perfil.component';
 
 
 
@@ -38,6 +39,7 @@ import { PublicitariaComponent } from './view/publicacion/publicitaria/publicita
     CambiarAtributosComponent,
     GestionarComponent,
     PublicitariaComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

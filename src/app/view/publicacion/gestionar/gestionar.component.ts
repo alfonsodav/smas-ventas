@@ -32,6 +32,22 @@ export class GestionarComponent implements OnInit {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
       altFile: 'hotel sunsol'
     },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
+    {
+      ruta: 'assets/images/sunsol-piscina-sm.jpg',
+      altFile: 'hotel sunsol'
+    },
   ];
   videos: any[] = [
     {
