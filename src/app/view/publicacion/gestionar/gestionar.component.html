@@ -1,5 +1,5 @@
 <nav class="nav navbar shadow">
-    <h3 class="pl-3">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
+    <h3 class="pl-3 titulo">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
     <div style="-webkit-box-flex: 1;flex-grow: 1;border:none"></div>
     <div>
       <a class="nav-link" routerLink="/publicacion"><i class="fa fa-camera-retro"></i>Imagen principal</a>
@@ -25,14 +25,14 @@
         <button class="btn gestionado" (click)="mostrar('video')"><i class="fa fa-film"></i></button>
         <button class="btn gestionado" (click)="mostrar('imagen')"><i class="far fa-image"></i></button>
       </div>
-
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
     <div class="miniaturas row" *ngIf="multimedia == 'imagen'" >
       <figure class="col-2" *ngFor="let imagen of imagenes">
         <img  class="miniatura shadow" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
         <span class="far fa-trash-alt d-block text-center"></span>
       </figure> 
     </div>
-
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
     <div class="miniaturas row" *ngIf="multimedia == 'video'">
         <div *ngFor="let video of videos">
           <video  class="miniatura shadow" controls preload="metadata" >
@@ -41,7 +41,7 @@
           <span class="far fa-trash-alt d-block text-center"></span>
         </div> 
     </div>
-
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
     <div class="miniaturas row" *ngIf="multimedia == 'archivo'">
         <figure *ngFor="let documento of documentos">
         <a href="{{documento.ruta}}">
