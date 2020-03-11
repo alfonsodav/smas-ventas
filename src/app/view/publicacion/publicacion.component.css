@@ -19,14 +19,10 @@
     border-radius: 2px !important;
 }
 .titulo{
-    position: absolute;
+    float: left;
     padding: 10px;
     color: #00b0bc;
-}
-@media(max-width:1200px){
-    .titulo{
-        display: none;
-    }
+    justify-content: space-between;
 }
 .atributos{
     border: none;
@@ -36,11 +32,6 @@
     padding-left: 37%;
     font-size: 1.5em;
 } 
-.nav div{
-    border-left: 1px solid #ccc;
-    padding-top: 0.5rem;
-    
-}
 .nav{
     color: #00b0bc;
     padding: 0 !important;
@@ -74,4 +65,35 @@ a:hover{
 .gestionado i {
     color: #00b0bc;
     font-size: 2rem;
+}
+#regresar-titulo{
+    border: none;
+}  
+#primero{
+    left: 20px;
+    position: inherit;
+}
+@media(max-width:960px){
+    #regresar{
+     display: none;
+    }
+    .enlaces{
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+}
+@media(min-width:960px){
+    #regresar-titulo{
+        display: none;
+        border: none;
+    }  
+    #ultimo{
+        border-right: 1px solid #ccc;
+    }
+
+.nav div{
+    border-left: 1px solid #ccc;
+    padding-top: 0.5rem;
+    
+}
 }

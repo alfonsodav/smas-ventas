@@ -1,5 +1,7 @@
 .nav-component {
-padding: 25px;
+padding: 20px;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 .nav-component h3{
     color: #3bb2aa;
@@ -11,7 +13,7 @@ padding: 25px;
       }
       
       .search input {
-        width: 250px;
+        width: 300px;
         height: 32px;
       
         background: #dfdfdf;
@@ -42,6 +44,14 @@ padding: 25px;
     color: #cfcfcf;
     font-weight: bold;
 }
+#action-movil i{
+    padding: 5px;
+    color: #cfcfcf;
+    font-weight: bold;
+}
+#action-div i:hover{ 
+    color: #3bb2aa;
+}
 #action-table i:hover{ 
     color: #3bb2aa;
 }
@@ -67,4 +77,13 @@ th{
     -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
 -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
 box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
+}
+.texto-pequeño{
+    font-size: x-small;
+    font-weight: 450;
+}
+.contadores{
+    display: grid;
+    font-size: 1rem;
+    margin: 5px;
 }

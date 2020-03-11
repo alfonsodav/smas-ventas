@@ -13,30 +13,30 @@
       </div>
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
-<div *ngIf="opciones =='editar'" class="scrollable">
+<div *ngIf="opciones =='editar'" class="row">
         <p> <b>Datos Personales</b></p>
         <form action="" name="user-data" class="form-group row">
-    <div class="col-6">
+    <div class="col-md-6">
         <label class="col-form-label" for="nombre">Nombre/Razón Social</label>
         <input type="text" name="nombre" id="nombre" class="form-control" required>
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
         <label class="col-form-label" for="apellido">Apellido</label>
         <input type="text" name="apellido" id="apellido" class="form-control">
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
         <label class="col-form-label" for="pais">País</label>
         <input type="text" name="pais" id="pais" class="form-control">
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
         <label class="col-form-label" for="local">Localidad</label>
         <input type="text" name="local" id="local" class="form-control">
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
         <label class="col-form-label" for="telefono">Telefono</label>
         <input type="tel" class="form-control" name="telefono" id="telefono" required>
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
         <label class="col-form-label" for="direcion">Domicílio</label>
         <input type="text" name="direcion" id="direcion" class="form-control">
     </div>
@@ -46,7 +46,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 <div *ngIf="opciones == 'configurar'">
     <p><b>Configuracion de cuenta</b></p>
-<form class="form-groud col-6">
+<form class="form-groud justify-content">
     <div>
     <span class="mr-3">¿Recibir notificaciones por correo?</span>
     <label class="switch">
@@ -61,12 +61,14 @@
         <span class="slider"></span>
     </label>
 </div>
-    <label for="idioma" class=" d-flex">Idioma por defecto
+<div class="col-md-6">
+    <label for="idioma" class="d-flex">Idioma por defecto
     <select required class="custom-select browser-default" id="idioma">
         <option value="Español">Español</option>
         <option value="English">English</option>
     </select>
-    </label>
+</label>
+</div>
 <button type="submit" class="btn d-block mx-auto mt-3 text-white" style="background-color:#13646c;">Actualizar Perfil</button>
 </form>
 </div>
