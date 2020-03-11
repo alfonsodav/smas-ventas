@@ -17,7 +17,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './view/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidebarComponent } from './view/sidebar/sidebar.component';
 import { PublicacionesComponent } from './view/publicaciones/publicaciones.component';
 import { HomeComponent } from './view/home/home.component';
 import { PublicacionComponent } from './view/publicacion/publicacion.component';
@@ -32,7 +31,6 @@ import { PerfilComponent } from './view/perfil/perfil.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent,
     PublicacionesComponent,
     HomeComponent,
     PublicacionComponent,

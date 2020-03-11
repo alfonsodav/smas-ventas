@@ -6,6 +6,12 @@
 .fa{
     color: white;
 }
+@media(min-width:768){
+    moneda{
+        display: none;
+        visibility: hidden;
+    }
+}
 .moneda a{
     color:#3bb2aa;
 }

@@ -1,33 +1,39 @@
-<nav class="d-flex shadow nav-component">
-  <h4 class="pt-2">ADMINISTRACIÓN DE PUBLICACIONES</h4>
-  <div style="-webkit-box-flex: 1;flex-grow: 1;"></div>
-  
-  <div class="search">
+<nav class="shadow nav-component justify-content-between row">
+  <div class="col-12 col-md-7">
+  <h5 class="pt-2 h4-responsive">ADMINISTRACIÓN DE PUBLICACIONES</h5>  
+  </div>
+  <div class="search justify-content-between  d-flex">
     <span class="fa fa-search"></span>
     <input type="search" placeholder="Buscar Publicación">
+    <div class=" d-md-none">
+      <span class="p-2" style="color: #084c55;"><i class="fas fa-filter"></i></span>
+      <span class="p-2" style="color: #084c55;"><i class="fas fa-sort-amount-down-alt"></i></span>
+    </div>
   </div>
 </nav>
 <div class="container mt-2">
-  <div class="row">
+  <div class="row justify-content-between">
     <span>se muestran 2 de 4 </span>
-    <span style="-webkit-box-flex: 1;flex-grow: 1;"></span>
+    <div class="d-none d-md-block">
     <span class="p-2" style="color: #084c55;"><i class="fas fa-filter"></i>Filtrar</span>
     <span class="p-2" style="color: #084c55;"><i class="fas fa-sort-amount-down-alt"></i>Ordenar</span>
+    </div>
   </div>
-  <div class="table-scroll-vertical publicaciones">
-    <table class="tabla">
+  <div class="publicaciones">
+    <!--  //////////////////////////          vista escritorio                                    ////////////////////////// -->
+    <table class="tabla d-none d-md-block">
       <thead>
         <th>Menú</th>
-        <th><span matBadge="11" matBadgeOverlap="false">Publicación</span></th>
-        <th><span matBadge="11" matBadgeOverlap="false">Publicidad destacada</span></th>
-        <th><span matBadge="11" matBadgeOverlap="false">Publicidad en pagina central</span></th>
-        <th><span matBadge="11" matBadgeOverlap="false">Publicidad en pie de pagina</span></th>
-        <th><span matBadge="11" matBadgeOverlap="false">Publicidad en encabezado</span></th>
-        <th><span matBadge="11" matBadgeOverlap="false">Publicidad lateral izquierda</span></th>
+        <th><span matBadge="1" matBadgeOverlap="false">Publicación</span></th>
+        <th><span matBadge="4" matBadgeOverlap="false">Publicidad destacada</span></th>
+        <th><span matBadge="5" matBadgeOverlap="false">Publicidad en pagina central</span></th>
+        <th><span matBadge="2" matBadgeOverlap="false">Publicidad en pie de pagina</span></th>
+        <th><span matBadge="1" matBadgeOverlap="false">Publicidad en encabezado</span></th>
+        <th><span matBadge="3" matBadgeOverlap="false">Publicidad lateral izquierda</span></th>
       </thead>
       <tbody>
         <tr>
-          <td id="action-table">
+          <td id="action-table" class=" ta">
             <i class="far fa-pause-circle"></i> 
             <a class="text-body"  routerLink="/publicacion"><i class="far fa-edit"></i></a>
             <i class="fa fa-power-off"></i>
@@ -62,10 +68,147 @@
         </tr>
       </tbody>
     </table>
+    <!--  //////////////////////////          vista movil                                    ////////////////////////// -->
+    <div class="d-block d-md-none bg-white">
+      <div class="row border">
+      <div class="col-1" id="action-movil">
+        <i class="far fa-pause-circle"></i> 
+        <a class="text-body"  routerLink="/publicacion"><i class="far fa-edit"></i></a>
+        <i class="fa fa-power-off"></i>
+      </div>
+      <div class="col-10">
+        <img class="rounded-circle ml-2 mt-2" src="assets/images/sunsol-piscina-sm.jpg" alt="" width="60px" height="60px">
+        <span class="p-2">hotel Euro Building</span>
+      </div>
+      <div class="my-auto">
+        <mat-icon class="fa fa-arrow-down text-primary my-auto" (click)="detalle1.toggle()"></mat-icon>
+      </div>
+    </div>
+    <div class="texto-pequeño" mdbCollapse #detalle1="bs-collapse">
+      <div class="row">
+        <div class="col-2 p-1"><span >Publicidad Destacada</span><br>
+      </div>
+        <div class="col-3 p-1"><span >Publicidad pagina central</span>
+        </div>
+        <div class="col-2 p-1"><span >Publicidad pie de pagina</span> 
+        </div>
+        <div class="col-2 p-1"><span >Publicidad encabezado</span>
+        </div>
+        <div class="col-3 p-1"><span >Publicidad lateral izquierda</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 p-1">
+        <div class="text-center contadores">
+          <span class="rounded-circle text-danger">2</span>
+          <span class="fa fa-plus-circle text-info"></span>
+          <span class="">2</span>
+        </div>
+      </div>
+        <div class="col-3 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+        <div class="col-2 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+        <div class="col-2 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+        <div class="col-3 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+      </div>
+    </div> 
+
+    </div>
+    <div class="d-block d-md-none bg-white">
+      <div class="row border">
+      <div class="col-1" id="action-movil">
+        <i class="far fa-pause-circle"></i> 
+        <a class="text-body"  routerLink="/publicacion"><i class="far fa-edit"></i></a>
+        <i class="fa fa-power-off"></i>
+      </div>
+      <div class="col-10">
+        <img class="rounded-circle ml-2 mt-2" src="assets/images/sunsol-piscina-sm.jpg" alt="" width="60px" height="60px">
+        <span class="p-2">hotel Euro Building</span>
+      </div>
+      <div class="my-auto">
+        <mat-icon class="fa fa-arrow-down text-primary " (click)="detalle.toggle()"></mat-icon>
+      </div>
+    </div>
+    <div class="texto-pequeño" mdbCollapse #detalle="bs-collapse">
+        <div class="row">
+        <div class="col-2 p-1"><span >Publicidad Destacada</span><br>
+      </div>
+        <div class="col-3 p-1"><span >Publicidad pagina central</span>
+        </div>
+        <div class="col-2 p-1"><span >Publicidad pie de pagina</span> 
+        </div>
+        <div class="col-2 p-1"><span >Publicidad encabezado</span>
+        </div>
+        <div class="col-3 p-1"><span >Publicidad lateral izquierda</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 p-1">
+        <div class="text-center contadores">
+          <span class="rounded-circle text-danger">2</span>
+          <span class="fa fa-plus-circle text-info"></span>
+          <span class="">2</span>
+        </div>
+      </div>
+        <div class="col-3 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+        <div class="col-2 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+        <div class="col-2 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+        <div class="col-3 p-1">
+          <div class="text-center contadores">
+            <span class="rounded-circle text-danger">2</span>
+            <span class="fa fa-plus-circle text-info"></span>
+            <span class="">2</span>
+            </div>
+        </div>
+      </div>
+    </div> 
+
+    </div>
   </div>
   <div class="text-center mt-5">
-    <i class="fas fa-redo fa-spin fa-3x" style="color: #0ec2fb;"></i>
-        </div>
+    <i class="fas fa-redo fa-3x" style="color: #0ec2fb;"></i>
+  </div>
       
 <div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
   aria-hidden="true" [config]="{backdrop: false}">

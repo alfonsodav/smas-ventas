@@ -1,7 +1,33 @@
-<app-header></app-header>
+<header>
+    <div class="navbar navbar-absolute-top shadow">
+        <div class="row w-100" >
+            
+            <div class="col-sm-6 col-8 p-2 d-flex d-md-block">
+             <span class="fas fa-bars hamburguesa my-auto m-1" (click)="sidenav.toggle()"></span>
+                
+                <div class="moneda"><b><a  routerLink=""> ECU </a><span class="text-white">|</span><a  routerLink=""> USD </a></b></div>
+                <h4 class="text-white my-auto h3-responsive">Gestionar VENTAS</h4>
+            </div>
+            
+            <div class="col-sm-6 col-4 nav-noti ">
+                <!-- <div class="espaciador"></div> -->
+                <div class="d-flex">
+                <div class="p-md-3 d-flex ">
+                <span class="p-2"><i class="fa fa-bell"></i></span><span class="p-2"><i class="fa fa-envelope"></i></span>
+            </div>
+            <div class="p-md-3 d-flex nav-user ">
+                <a  routerLink="perfil" class="p-2">NOMBRE</a><h3 class="text-white">|</h3>
+                 <img class="avatar ml-2 mt-n2" src="assets/images/avatar.jpg" alt="" width="50px" height="50px">
+            </div>
+        </div>
+            </div>
+
+        </div>
+    </div>
+</header>
 <mat-sidenav-container class="sidebar" autosize>
-    
-    <mat-sidenav #sidenav class="sidenav mat-sidenav-opened" mode="side" opened="true" >
+   
+    <mat-sidenav #sidenav class="sidenav mat-sidenav-opened" mode="side" opened="false" >
         <ul class="mt-3 ml-n3">
             <li class="text-white list-unstyled p-2" *ngFor="let item of menu">
                 <i class="fa {{item.icon}} pt-1" ></i>

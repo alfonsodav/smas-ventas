@@ -1,20 +1,26 @@
-<nav class="nav navbar shadow">
-  <h3 class="pl-3 titulo">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
-  <div style="-webkit-box-flex: 1;flex-grow: 1;border:none"></div>
-  <div>
-    <a class="nav-link" routerLink="/publicacion"><i class="fa fa-camera-retro"></i>Imagen principal</a>
+<nav class="nav navbar shadow d-block d-md-flex">
+  <div class="titulo d-flex col-md-6 col-12">
+    <h3 class="pl-3 my-auto h3-responsive">edita tu publicacion <b class="font-italic">"nombre"</b></h3>
+    <div id="regresar-titulo"> 
+      <a class="nav-link"  routerLink="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>
+    </div>
   </div>
-  <div>
-    <a class="nav-link"  routerLink="/publicacion/atributos"><i class="fa fa-info-circle"></i>atributos</a>
-  </div>
-  <div> 
-    <a class="nav-link" routerLink="/publicacion/gestionar"><i class="fa fa-folder-open"></i>Gestionar Multimedia</a>
-  </div>
-  <div style="border-right: 1px solid #ccc;">
-    <a class="nav-link" routerLink="/publicacion/publicitaria"><i class="fa fa-photo-video"></i>Imagenes Publicitarias</a>
-  </div>
-  <div id="regresar"> 
-    <a class="nav-link"  routerLink="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>
+    <div class="justify-content-end d-flex col-md-6 col-12 enlaces">
+    <div id="primero">
+      <a class="nav-link" routerLink="/publicacion"><i class="fa fa-camera-retro"></i>Imagen Principal</a>
+    </div>
+    <div>
+      <a class="nav-link"  routerLink="/publicacion/atributos"><i class="fa fa-info-circle"></i>Atributos</a>
+    </div>
+    <div> 
+      <a class="nav-link" routerLink="/publicacion/gestionar"><i class="fa fa-folder-open"></i>Gestionar Multimedia</a>
+    </div>
+    <div id="ultimo">
+      <a class="nav-link" routerLink="/publicacion/publicitaria"><i class="fa fa-photo-video"></i>Imagenes Publicitarias</a>
+    </div>
+    <div id="regresar"> 
+      <a class="nav-link"  routerLink="/publicaciones"><mat-icon class="fa fa-reply fa-2x text-danger"></mat-icon></a>
+    </div>
   </div>  
 </nav>
 
@@ -28,7 +34,7 @@
     <div class="" mdbCollapse #precio="bs-collapse">
       <form class="example-form">
       
-          <input type="" class="atributos">
+          <input type="number" class="atributos">
      
     </form>
     </div> 
@@ -41,7 +47,7 @@
     <div class="" mdbCollapse #descripcion="bs-collapse">
       <form class="example-form">
       
-          <input type="" class="atributos">
+          <input type="text" class="atributos">
      
     </form>
     </div> 
