@@ -25,15 +25,15 @@
 </nav>
 
       <mat-card class="container">
-        <mat-card-title class="text-smas">Seleciona tu imagen principal</mat-card-title>
+        <h3 class="text-smas">Seleciona tu imagen principal</h3>
         <div class="miniaturas row">
           <figure> 
-            <img *ngFor="let imagen of imagenes" class="miniatura shadow" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
+            <img *ngFor="let imagen of imagenes" class="miniatura shadow {{imagen.active}}" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
           </figure>
           
         </div><div class="d-flex"> 
           <div style="-webkit-box-flex: 1;flex-grow: 1;"></div>
-          <button class="btn bg-primary rounded text-white">Guardar</button>
+          <button class="btn guardar rounded-pill text-white">Guardar</button>
           </div>
         
       </mat-card>

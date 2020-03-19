@@ -5,10 +5,13 @@
     border-radius: 0.2rem;
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30) !important
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30);
 }
 .miniatura:active{
     border: 1px solid #084c55;
+}
+.miniaturas .true{
+    border: 3px solid #084c55;
 }
 .container{
     border: 1px solid #ccc;
@@ -26,7 +29,7 @@
 }
 .atributos{
     border: none;
-    border-bottom: 1px solid #ccc !important;
+    border-bottom: 2px solid #ccc !important;
 }
 .nav div i{
     padding-left: 37%;
@@ -70,8 +73,11 @@ a:hover{
     border: none;
 }  
 #primero{
-    left: 20px;
+    left: 10px;
     position: inherit;
+}
+.guardar{
+    background-color: #00b0bc;
 }
 @media(max-width:960px){
     #regresar{
@@ -91,9 +97,11 @@ a:hover{
         border-right: 1px solid #ccc;
     }
 
-.nav div{
+.nav .nav-link{
     border-left: 1px solid #ccc;
-    padding-top: 0.5rem;
-    
+    padding-top: 1rem;   
+}
+.nav #regresar .nav-link{
+    border: none;
 }
 }

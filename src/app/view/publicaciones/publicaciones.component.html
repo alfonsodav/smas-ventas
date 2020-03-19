@@ -15,8 +15,8 @@
   <div class="row justify-content-between">
     <span>se muestran 2 de 4 </span>
     <div class="d-none d-md-block">
-    <span class="p-2" style="color: #084c55;"><i class="fas fa-filter"></i>Filtrar</span>
-    <span class="p-2" style="color: #084c55;"><i class="fas fa-sort-amount-down-alt"></i>Ordenar</span>
+    <span class="p-2" style="color: #084c55; font-weight: 500;"><i class="fas fa-filter"></i>Filtrar</span>
+    <span class="p-2" style="color: #084c55; font-weight: 500;"><i class="fas fa-sort-amount-down-alt"></i>Ordenar</span>
     </div>
   </div>
   <div class="publicaciones">
@@ -24,12 +24,12 @@
     <table class="tabla d-none d-md-block">
       <thead>
         <th>Menú</th>
-        <th><span matBadge="1" matBadgeOverlap="false">Publicación</span></th>
-        <th><span matBadge="4" matBadgeOverlap="false">Publicidad destacada</span></th>
-        <th><span matBadge="5" matBadgeOverlap="false">Publicidad en pagina central</span></th>
-        <th><span matBadge="2" matBadgeOverlap="false">Publicidad en pie de pagina</span></th>
-        <th><span matBadge="1" matBadgeOverlap="false">Publicidad en encabezado</span></th>
-        <th><span matBadge="3" matBadgeOverlap="false">Publicidad lateral izquierda</span></th>
+        <th>Publicación<span class="pl-1" matBadge="1" matBadgeOverlap="false">  </span></th>
+        <th>Publicidad destacada<span class="pl-1" matBadge="4" matBadgeOverlap="false"></span>  </th>
+        <th>Publicidad en pagina central<span class="pl-1" matBadge="5" matBadgeOverlap="false">  </span></th>
+        <th>Publicidad en pie de pagina<span class="pl-1" matBadge="2" matBadgeOverlap="false">  </span></th>
+        <th>Publicidad en encabezado<span class="pl-1" matBadge="1" matBadgeOverlap="false">  </span></th>
+        <th>Publicidad lateral izquierda<span class="pl-1" matBadge="3" matBadgeOverlap="false">  </span></th>
       </thead>
       <tbody>
         <tr>
@@ -101,7 +101,7 @@
         <div class="col-2 p-1">
         <div class="text-center contadores">
           <span class="rounded-circle text-danger">2</span>
-          <span class="fa fa-plus-circle text-info"></span>
+          <span class="fa fa-plus-circle text-info" (click)="basicModal.show()"></span>
           <span class="">2</span>
         </div>
       </div>
@@ -229,7 +229,17 @@
         selecciona la que deseas añadir a tu publicación</h4>
       </div>
       <mat-divider></mat-divider>
-      <div class="modal-body">
+      <div class="modal-body scrollable">
+        <div class="text-smas">
+          <p>VENCIMIENTO: <span class="text-danger">21/04/2020  12:00</span> </p>
+          <p>DIAS DISPONIBLES: <span class="text-primary">25</span></p>
+          <p>PUBLICIDAD DISPONIBLE: <span class="text-primary">2</span></p>
+        </div>
+        <div class="text-smas">
+          <p>VENCIMIENTO: <span class="text-danger">21/04/2020  12:00</span> </p>
+          <p>DIAS DISPONIBLES: <span class="text-primary">25</span></p>
+          <p>PUBLICIDAD DISPONIBLE: <span class="text-primary">2</span></p>
+        </div>
         <div class="text-smas">
           <p>VENCIMIENTO: <span class="text-danger">21/04/2020  12:00</span> </p>
           <p>DIAS DISPONIBLES: <span class="text-primary">25</span></p>

@@ -9,13 +9,12 @@ padding-bottom: 15px;
     .search {
         position: relative;
         color: #aaa;
-        font-size: 18px;
+        font-size: 20px;
       }
       
       .search input {
         width: 300px;
-        height: 32px;
-      
+        height: 37px;
         background: #dfdfdf;
         border: 1px solid #aaa;
         border-radius: 20px;
@@ -60,17 +59,17 @@ padding-bottom: 15px;
 
 }
 .plus {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #0ec2fb;
 }
 .menos{
-    font-size: 1.5em;
+    font-size: 1.6em;
     color:#ef2c2c
 }
 th{
     padding: 5px;
-    font-weight: bolder;
-    
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 .tabla{
     border: 2px solid #dfdfdf; 
@@ -86,4 +85,8 @@ box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
     display: grid;
     font-size: 1rem;
     margin: 5px;
+}
+.modal{
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
 }

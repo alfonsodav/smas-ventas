@@ -11,7 +11,8 @@ export class PublicacionComponent implements OnInit {
   imagenes: any[] = [
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
-      altFile: 'hotel sunsol'
+      altFile: 'hotel sunsol',
+      active: true
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
@@ -19,19 +20,23 @@ export class PublicacionComponent implements OnInit {
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
-      altFile: 'hotel sunsol'
+      altFile: 'hotel sunsol',
+      active: false
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
-      altFile: 'hotel sunsol'
+      altFile: 'hotel sunsol',
+      active: false
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
-      altFile: 'hotel sunsol'
+      altFile: 'hotel sunsol',
+      active: false
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
-      altFile: 'hotel sunsol'
+      altFile: 'hotel sunsol',
+      active: false
     },
   ];
 
