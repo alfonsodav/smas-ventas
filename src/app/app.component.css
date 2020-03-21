@@ -8,9 +8,7 @@
     position: fixed;
   }
 
-.sidebar ul li{
-  display: flex;
-}
+
   
 .sidenav {
   background-color: #084c55;
@@ -49,6 +47,10 @@
   font-size: 1.3rem !important;
   justify-content: flex-end;
 }
+.nav-noti .mat-badge-content {
+  color: cyan;
+  background: white;
+}
 .nav-user a{
   color:#3bb2aa;
 }
@@ -56,11 +58,29 @@
   border-radius: 50%;
   border: 2px solid whitesmoke;
 }
+.hamburguesa{
+  font-size: large;
+  color: white;
+ 
+}
 
 /*                  Media Query               */
+@media(max-width:768px){
+  .sidebar ul li{
+    display: grid;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .sidebar ul li i{
+    font-size: 2.5rem !important;
+  }
+}
 @media(min-width:769px){
   .main{
     margin-left: 20px;
+  }
+  .sidebar ul li{
+    display: flex;
   }
 }
 

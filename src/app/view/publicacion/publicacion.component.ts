@@ -16,7 +16,8 @@ export class PublicacionComponent implements OnInit {
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',
-      altFile: 'hotel sunsol'
+      altFile: 'hotel sunsol',
+      active: false
     },
     {
       ruta: 'assets/images/sunsol-piscina-sm.jpg',

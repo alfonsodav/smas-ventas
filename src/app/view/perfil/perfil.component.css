@@ -9,6 +9,7 @@
     border-radius: 1.5rem;
     border-color: #707070;
     margin: 1%;
+    height: 45px;
 
 }
 .main{
@@ -20,7 +21,10 @@
     margin-top: 5%;
 }
 .form-control{
-    border: 2px solid #dfdfdf;
+    border: 2px solid #aeaeae;
+}
+.col-form-label{
+  font-weight: bolder;
 }
 #subir-imagen{
   background-color: #084c55;

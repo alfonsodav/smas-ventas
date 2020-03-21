@@ -1,5 +1,5 @@
 <div class="p-2" >
-    <h5 class="text-center">Perfil de Usuario</h5>
+    <h5 class="text-center"><b>Perfil de Usuario</b></h5>
     
         <img class="avatar mx-auto d-block" src="assets/images/avatar.jpg" width="150px" height="150px">
     
@@ -14,7 +14,7 @@
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 <div *ngIf="opciones =='editar'" class="row">
-        <p> <b>Datos Personales</b></p>
+        <p> <strong>Datos Personales</strong></p>
         <form action="" name="user-data" class="form-group row">
     <div class="col-md-6">
         <label class="col-form-label" for="nombre">Nombre/Razón Social</label>
@@ -45,29 +45,29 @@
 </div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
 <div *ngIf="opciones == 'configurar'">
-    <p><b>Configuracion de cuenta</b></p>
-<form class="form-groud justify-content">
-    <div>
+    <p class="ml-4"><b>Configuracion de cuenta</b></p>
+<form class="form-groud col-md-7 col-lg-5">
+    <div class="col-12 m-3">
     <span class="mr-3">¿Recibir notificaciones por correo?</span>
-    <label class="switch">
+    <label class="switch float-right">
         <input type="checkbox">on
         <span class="slider"></span>
     </label>
 </div>
-    <div>
-    <span class="mr-3">¿Desea compartir su ubicación?</span>
-    <label class="switch">
+    <div class="col-12 m-3">
+    <span class="">¿Desea compartir su ubicación?</span>
+    <label class="switch float-right">
         <input type="checkbox">
         <span class="slider"></span>
     </label>
 </div>
-<div class="col-md-6">
-    <label for="idioma" class="d-flex">Idioma por defecto
-    <select required class="custom-select browser-default" id="idioma">
+<div class="col-12 m-3 d-inline-flex">
+    <label for="idioma" class="d-flex mr-3">Idioma por defecto</label>
+    <select required class="custom-select browser-default w-50 ml-3 ml-sm-5 mt-n1" id="idioma" >
         <option value="Español">Español</option>
         <option value="English">English</option>
     </select>
-</label>
+
 </div>
 <button type="submit" class="btn d-block mx-auto mt-3 text-white" style="background-color:#13646c;">Actualizar Perfil</button>
 </form>

@@ -32,14 +32,14 @@
         <button class="btn gestionado" (click)="mostrar('imagen')"><i class="far fa-image"></i></button>
       </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <div class="miniaturas row" *ngIf="multimedia == 'imagen'" >
+    <div class="miniaturas row mx-auto" *ngIf="multimedia == 'imagen'" >
       <figure *ngFor="let imagen of imagenes">
         <img  class="miniatura" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
         <span class="far fa-trash-alt d-block text-center"></span>
       </figure> 
     </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <div class="miniaturas row" *ngIf="multimedia == 'video'">
+    <div class="miniaturas row mx-auto" *ngIf="multimedia == 'video'">
         <div *ngFor="let video of videos">
           <video  class="miniatura" controls preload="metadata" >
             <source src="{{video.ruta}}">  
@@ -48,7 +48,7 @@
         </div> 
     </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <div class="miniaturas row" *ngIf="multimedia == 'archivo'">
+    <div class="miniaturas row mx-auto" *ngIf="multimedia == 'archivo'">
         <figure *ngFor="let documento of documentos">
         <a href="{{documento.ruta}}">
           <!-- <span class="far fa-10x fa-file-pdf p-5 text-smas"></span> -->
