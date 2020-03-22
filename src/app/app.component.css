@@ -61,7 +61,9 @@
 .hamburguesa{
   font-size: large;
   color: white;
- 
+}
+.material-icons-outlined {
+  font-size: 28px !important;
 }
 
 /*                  Media Query               */

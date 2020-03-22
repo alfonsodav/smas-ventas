@@ -82,6 +82,9 @@ a:hover{
 .guardar{
     background-color: #00b0bc;
 }
+.material-icons-outlined {
+    font-size: 28px !important;
+}
 @media(max-width:960px){
     #regresar{
      display: none;
