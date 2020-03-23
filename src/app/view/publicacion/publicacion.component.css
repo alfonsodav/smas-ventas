@@ -1,5 +1,4 @@
 .miniatura{
-    width: auto;
     margin: 1rem;
     background-color: #fff;
     border-radius: 0.2rem;
@@ -14,7 +13,7 @@ figure .far{
     color: red;
 }
 .miniaturas{
-    margin: auto;
+    margin: 1rem;
 }
 .miniaturas .true{
     border: 4px solid #084c55;

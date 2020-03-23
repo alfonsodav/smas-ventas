@@ -34,14 +34,14 @@
         <button class="btn gestionado" (click)="mostrar('imagen')"><i class="far fa-image"></i></button>
       </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <div class="miniaturas row mx-auto" *ngIf="multimedia == 'imagen'" >
+    <div class="miniaturas row p-3" *ngIf="multimedia == 'imagen'"  style="justify-content: space-between;">
       <figure *ngFor="let imagen of imagenes">
         <img  class="miniatura" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
         <span class="far fa-trash-alt d-block text-center"></span>
       </figure> 
     </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <div class="miniaturas row mx-auto" *ngIf="multimedia == 'video'">
+    <div class="miniaturas row p-3" *ngIf="multimedia == 'video'"  style="justify-content: space-between;">
         <div *ngFor="let video of videos">
           <video  class="miniatura" controls preload="metadata" >
             <source src="{{video.ruta}}">  
@@ -50,7 +50,7 @@
         </div> 
     </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <div class="miniaturas row mx-auto" *ngIf="multimedia == 'archivo'">
+    <div class="miniaturas row p-3" *ngIf="multimedia == 'archivo'"  style="justify-content: space-between;">
         <figure *ngFor="let documento of documentos">
         <a href="{{documento.ruta}}">
           <!-- <span class="far fa-10x fa-file-pdf p-5 text-smas"></span> -->
