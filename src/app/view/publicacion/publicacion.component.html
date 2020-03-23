@@ -26,11 +26,11 @@
   </div>  
 </nav>
 
-      <mat-card class="container">
+      <mat-card class="container shadow">
         <h3 class="text-smas">Seleciona tu imagen principal</h3>
         <div class="miniaturas">
           <figure class="row ml-auto "> 
-            <img *ngFor="let imagen of imagenes" class="miniatura shadow  {{imagen.active}}" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
+            <img *ngFor="let imagen of imagenes" class="miniatura {{imagen.active}}" src="{{imagen.ruta}}" alt="{{imagen.altFile}}">
           </figure>
           
         </div><div class="d-flex"> 

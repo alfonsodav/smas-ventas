@@ -10,11 +10,14 @@
 .miniatura:active{
     border: 1px solid #084c55;
 }
+figure .far{
+    color: red;
+}
 .miniaturas{
     margin: auto;
 }
 .miniaturas .true{
-    border: 3px solid #084c55;
+    border: 4px solid #084c55;
 }
 .container{
     border: 1px solid #ccc;
@@ -67,6 +70,15 @@ a:hover{
 }
 .gestionado{
     float: right;
+    color: #084c55;
+    border-radius: 1.8rem;
+    border-color: #707070;
+    margin: 1%;
+    height: 57px;
+    width: 58px;
+}
+.gestionado:focus, .gestionado:active{
+    border-color: #00b0bc !important;
 }
 .gestionado i {
     color: #00b0bc;
@@ -81,9 +93,6 @@ a:hover{
 }
 .guardar{
     background-color: #00b0bc;
-}
-.material-icons-outlined {
-    font-size: 28px !important;
 }
 @media(max-width:960px){
     #regresar{

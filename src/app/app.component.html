@@ -33,21 +33,19 @@
     <mat-sidenav #sidenav class="sidenav mat-sidenav-opened mb-5" mode="{{mode}}" opened="false" >
         <ul class="mt-3 ml-md-n3 ml-n5">
             <li class="text-white list-unstyled p-2 " *ngFor="let item of menu">
-                <i class="fa {{item.icon}} pt-1" ></i>
-                <a class="text-white pl-1 " [routerLink]="[item.redirecTo]">{{item.name}}</a>
+                
+                <a class="text-white pl-1 " [routerLink]="[item.redirecTo]"><i class="fa {{item.icon}} pt-1" ></i>{{item.name}}</a>
             </li>
-            <li class="text-white list-unstyled p-md-2 p-0">
-            <div mdbDropdown>
-                <a mdbDropdownToggle class="dropdown-toggle waves-light"  type="button"
-                  mdbWavesEffect>
-                  bropdown
+            <li class="text-white list-unstyled p-md-2 p-0" mdbDropdown>
+                <a mdbDropdownToggle class="dropdown-toggle waves-light d-block"  type="button" mdbWavesEffect>
+                    <i class="fa fa-home d-block d-md-inline-block"></i>
+                  <span>bropdown</span>
                 </a>
-                <div class="dropdown-menu overflow-auto">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </div>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item text-left" href="#">Action</a>
+                  <a class="dropdown-item text-left" href="#">Another action</a>
+                  <a class="dropdown-item text-left" href="#">Something else action</a>
+                </div>  
             </li>
         </ul>
         
