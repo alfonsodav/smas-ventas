@@ -9,7 +9,7 @@
 .miniatura:active{
     border: 1px solid #084c55;
 }
-figure .far{
+.fa-trash-alt{
     color: red;
 }
 .miniaturas{
@@ -37,7 +37,7 @@ figure .far{
     border-bottom: 2px solid #ccc !important;
 }
 .nav div i{
-    padding-left: 37%;
+    padding-left: 0%;
     font-size: 1.5em;
 } 
 .nav{
@@ -46,6 +46,7 @@ figure .far{
 }
 .nav a{
     display: grid;
+    text-align: center;
     color: #084c55;
 }
 a:hover{
@@ -80,7 +81,7 @@ a:hover{
     border-color: #00b0bc !important;
 }
 .gestionado i {
-    color: #00b0bc;
+    color: #084c55;
     font-size: 2rem;
 }
 #regresar-titulo{
