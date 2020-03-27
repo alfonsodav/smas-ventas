@@ -1,8 +1,8 @@
 .miniatura{
-    margin: 1rem;
+    margin: 0.7rem;
     background-color: #fff;
     border-radius: 0.2rem;
-    max-width: 100%;
+    max-width: 130px;
     height: 95px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30);
 }
@@ -30,7 +30,6 @@
     float: left;
     padding: 10px;
     color: #00b0bc;
-    justify-content: space-between;
 }
 .atributos{
     border: none;
@@ -38,7 +37,7 @@
 }
 .nav div i{
     padding-left: 0%;
-    font-size: 1.5em;
+    font-size: 2rem;
 } 
 .nav{
     color: #00b0bc;
@@ -69,7 +68,6 @@ a:hover{
     display: grid;
 }
 .gestionado{
-    float: right;
     color: #084c55;
     border-radius: 1.8rem;
     border-color: #707070;
@@ -102,6 +100,24 @@ a:hover{
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
     }
+    .enlaces div{
+        width: 25%;
+    }
+    #ultimo{
+        margin-right: 30px;
+        margin-left: 5px;
+    }
+    .miniaturas{
+        margin: 0 !important;
+    }
+    .nav div i {
+        font-size: 3.5rem !important;
+    }
+}
+@media(max-width:350px){
+    .miniatura{
+        width: 115px;
+    }
 }
 @media(min-width:960px){
     #regresar-titulo{
@@ -119,4 +135,7 @@ a:hover{
 .nav #regresar .nav-link{
     border: none;
 }
+}
+.mat-card {
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4) !important;
 }

@@ -36,7 +36,10 @@ padding-bottom: 15px;
 }
 #action-table{
     display: grid;
-    padding: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.3rem;
 }
 #action-table i{
     padding: 5px;
@@ -56,7 +59,6 @@ padding-bottom: 15px;
 }
 .contador{
     text-decoration: underline #dfdfdf;
-
 }
 .plus {
     font-size: 1.6em;
@@ -86,10 +88,52 @@ box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.55);
     font-size: 1rem;
     margin: 5px;
 }
+.contadores .fa{
+    font-size: 1.5rem;
+}
+.contadores span{
+    margin: 3px;
+}
+.contadores .rounded-circle{
+    width: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contador-azul{
+    background-color: #0ec2fb;
+}
+.contador-naranja{
+    background-color: orange;
+}
+.contador-rojo{
+    background-color: orangered;
+}
+.contador-verde{
+    background-color: #69d26c;
+}
+.contador-amarillo{
+    background-color: #ffe565;
+}
+
 .modal{
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
 }
 .mat-badge-medium.mat-badge-above .mat-badge-content {
     top: -5px;
+}
+#mat-badge-content-2{
+    background-color: #0ec2fb;
+}
+#mat-badge-content-3{
+    background-color: orange;
+}
+#mat-badge-content-4{
+    background-color: orangered;
+}
+#mat-badge-content-5{
+    background-color: #69d26c;
+}
+#mat-badge-content-6{
+    background-color: #ffe565;
 }
